@@ -112,18 +112,20 @@
     </style>
 </head>
 <body>
-	<c:if test="${userChk==0 }">
-		<script>
-			alert("로그인 해 주세요.")
-			location.href = "list";
-		</script>
-	</c:if>
-	<c:if test="${userChk==1 }">
-		<script>
-			alert("권한이 없습니다.")
-			location.href = "list";
-		</script>
-	</c:if>
+	<c:choose>
+		<c:when test="${userChk==0 }">
+			<script>
+				alert("로그인 해 주세요.")
+				location.href = "list";
+			</script>
+		</c:when>
+		<c:when test="${userChk==1 }">
+			<script>
+				alert("권한이 없습니다.")
+				location.href = "list";
+			</script>
+		</c:when>
+	</c:choose>
     <header>
         <h1>　</h1>
     </header>
@@ -173,5 +175,6 @@
 			</div>
 		</div>
     </section>
+    <script type="text.javascript" src="alert.js"></script>
 </body>
 </html>

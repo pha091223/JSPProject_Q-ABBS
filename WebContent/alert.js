@@ -1,4 +1,3 @@
-
 	function loginCheck() {
 		if(document.loginForm.iid.value=="") {
 			alert("아이디를 입력해주세요.");
@@ -42,16 +41,30 @@
 		window.open(url, "_blank_1", "toolbar=no, menubar=no, scrollbars=yes, resizable=no, width=450, height=200");
 	}
 	
-	function writeCheck() {
-		if(document.writeForm.icontent.value.length<1) {
-			alert("내용을 입력해주세요.");
-			writeForm.icontent.focus();
+	function writeCheck(keyword) {
+		var s = null;
+		
+		switch(keyword){
+			case 'write' :
+				s = "작성하시겠습니까?";
+				break;
+			case 'modify' :
+				s = "수정하시겠습니까?";
+		}
+		
+		if(confirm(s)){
+			if(document.writeForm.icontent.value.length<1) {
+				alert("내용을 입력해주세요.");
+				writeForm.icontent.focus();
+				return false;
+			}
+			if(document.writeForm.ipwd.value.length<1) {
+				alert("비밀번호를 입력해주세요.");
+				writeForm.ipwd.focus();
+				return false;
+			}
+			return true;
+		} else {
 			return false;
 		}
-		if(document.writeForm.ipwd.value.length<1) {
-			alert("비밀번호를 입력해주세요.");
-			writeForm.ipwd.focus();
-			return false;
-		}
-		return true;
 	}

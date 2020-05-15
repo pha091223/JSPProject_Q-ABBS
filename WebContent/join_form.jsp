@@ -175,11 +175,12 @@
 	            </table>
 	            <br>
 	            <div class="btn_area">
-	                <span class="btn1"><input type="submit" value="JOIN"></span>
+	                <span class="btn1"><input type="submit" value="JOIN" onclick="return joinCheck()"></span>
 	                <span class="btn2"><a href="list"><input type="button" value="Cancle"></a></span>
 	            </div>
 	        </form>
 		</div>
     </section>
+    <script type="text/javascript" src="alert.js"></script>
 </body>
 </html>

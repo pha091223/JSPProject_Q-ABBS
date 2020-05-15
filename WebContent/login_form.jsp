@@ -109,7 +109,6 @@
     </style>
 </head>
 <body>
-	<script type="text/javascript" src="alert.js"></script>
 	<c:if test="${loginChk==0 }">
 		<script>
 			alert("아이디나 비밀번호가 틀렸습니다.");
@@ -158,5 +157,6 @@
 	        </form>
 		</div>
     </section>
+    <script type="text/javascript" src="alert.js"></script>
 </body>
 </html>

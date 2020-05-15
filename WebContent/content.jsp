@@ -171,9 +171,9 @@
 	                    <td class="formEle" colspan=3><input type="password" size="12" name="ipwd" maxlength="8"></td>
 	                </tr>
 	            </table>
-	           	<span class="btn3"><input type="submit" value="DELETE" onclick="javascript: form.action='./write_delete?no=${content.no }';"></span>
+	           	<span class="btn3"><input type="submit" value="DELETE" onclick="" formaction="write_delete?no=${content.no }"></span>
 	            <div class="btn_area">
-	                <span class="btn1"><input type="submit" value="MODIFY" onclick="javascript: form.action='./write_modify?no=${content.no }mod';"></span>
+	                <span class="btn1"><input type="submit" value="MODIFY" onclick="" formaction="write_modify?no=${content.no }mod"></span>
 	                <span class="btn2"><a href="javascript:history.back(-1)"><input type="button" value="CANCLE"></a></span>
 	            </div>
 	        </form>

@@ -169,11 +169,12 @@
 	                </tr>
 	            </table>
 	            <div class="btn_area">
-	                <span class="btn1"><input type="submit" value="WRITE"></span>
+	                <span class="btn1"><input type="submit" value="WRITE" onclick="return writeCheck('write')"></span>
 	                <span class="btn2"><a href="list"><input type="button" value="CANCLE"></a></span>
 	            </div>
 	        </form>
 	    </div>
     </section>
+    <script type="text/javascript" src="alert.js"></script>
 </body>
 </html>

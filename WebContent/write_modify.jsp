@@ -128,7 +128,6 @@
     </style>
 </head>
 <body>
-	<script type="text/javascript" src="alert.js"></script>
     <header>
         <h1>　</h1>
     </header>
@@ -169,11 +168,12 @@
 	                </tr>
 	            </table>
 	            <div class="btn_area">
-	                <span class="btn1"><input type="submit" value="MODIFY" onclick="return writeCheck()"></span>
+	                <span class="btn1"><input type="submit" value="MODIFY" onclick="return writeCheck('modify')"></span>
 	                <span class="btn2"><a href="javascript:history.back(-1)"><input type="button" value="CANCLE"></a></span>
 	            </div>
 	        </form>
 	    </div>
     </section>
+    <script type="text/javascript" src="alert.js"></script>
 </body>
 </html>
